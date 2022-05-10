@@ -81,4 +81,14 @@ def winning_move(board, piece):
 		score -= 4
 
 	return score
+
+
+        def score_position(board, piece):
+	score = 0
+
+	## Score center column
+	center_array = [int(i) for i in list(board[:, COLUMN_COUNT//2])]
+	center_count = center_array.count(piece)
+	score += center_count * 3
+
 			
