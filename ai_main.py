@@ -21,3 +21,7 @@ PLAYER_PIECE = 1
 AI_PIECE = 2
 
 WINDOW_LENGTH = 4
+
+def create_board():
+	board = np.zeros((ROW_COUNT,COLUMN_COUNT))
+	return 
