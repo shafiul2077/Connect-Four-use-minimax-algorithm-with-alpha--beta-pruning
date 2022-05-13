@@ -97,3 +97,10 @@ def winning_move(board, piece):
 			window = row_array[c:c+WINDOW_LENGTH]
 			score += evaluate_window(window, piece)
 			
+	## Score Vertical
+	for c in range(COLUMN_COUNT):
+		col_array = [int(i) for i in list(board[:,c])]
+		for r in range(ROW_COUNT-3):
+			window = col_array[r:r+WINDOW_LENGTH]
+			score += evaluate_window(window, piece)
+			
