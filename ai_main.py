@@ -90,5 +90,10 @@ def winning_move(board, piece):
 	center_array = [int(i) for i in list(board[:, COLUMN_COUNT//2])]
 	center_count = center_array.count(piece)
 	score += center_count * 3
-
+        ## Score Horizontal
+	for r in range(ROW_COUNT):
+		row_array = [int(i) for i in list(board[r,:])]
+		for c in range(COLUMN_COUNT-3):
+			window = row_array[c:c+WINDOW_LENGTH]
+			score += evaluate_window(window, piece)
 			
