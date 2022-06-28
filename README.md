@@ -1,1 +1,1 @@
-# Connect-Four-use-minimax-algorithm-with-alpha--beta-pruning
+# connect-four-use-minimax-algorithm-with-alpha--beta-pruning
